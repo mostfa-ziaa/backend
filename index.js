@@ -13,7 +13,7 @@ dotenv.config();
 app.use(express.json());
 
 app.listen(port, () =>{
-    console.log(`Server is running on pert: ${port}`);
+    console.log(`Server is running on port: ${port}`);
 });
 
 const connection = mysqli.createConnection({
@@ -246,5 +246,6 @@ app.get("/wel/:name/:age", (req, res) => {
     );
 
 });
+
 
 
