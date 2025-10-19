@@ -19,7 +19,7 @@ app.listen(port, () =>{
 const connection = mysqli.createConnection({
     host: "mysql.railway.internal",
     user: "root",
-    password: "UhprMwapBBOKrtYicNHthTHXvLodbgMD",
+    password: "yfbTtjkaZqPQKmYZsQLdIzHctHkweOoS",
     database: "railway"
 });
 
@@ -246,3 +246,4 @@ app.get("/wel/:name/:age", (req, res) => {
     );
 
 });
+
