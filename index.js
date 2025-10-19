@@ -1,5 +1,5 @@
 const express = require("express");
-const mysqli = require("mysql");
+const mysqli = require("mysql2");
 const encrypt = require("bcrypt");
 const app = express();
 const port = process.env.PORT || 3000;
@@ -246,4 +246,5 @@ app.get("/wel/:name/:age", (req, res) => {
     );
 
 });
+
 
