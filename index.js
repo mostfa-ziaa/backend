@@ -17,10 +17,10 @@ app.listen(port, () =>{
 });
 
 const connection = mysqli.createConnection({
-    host: "srv1973.hstgr.io",
-    user: "u459544856_mussssssss",
-    password: "n?0XxFW=&G0W",
-    database: "u459544856_nodejs"
+    host: "mysql.railway.internal",
+    user: "root",
+    password: "UhprMwapBBOKrtYicNHthTHXvLodbgMD",
+    database: "railway"
 });
 
 connection.connect((err) => {
@@ -244,4 +244,5 @@ app.get("/wel/:name/:age", (req, res) => {
     res.send( "<h1>hello "+req.params.name+"</h1> <br>"+
         "<h1>age "+req.params.age+"</h1>"
     );
+
 });
